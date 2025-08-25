@@ -1,0 +1,282 @@
+*{
+  box-sizing: border-box;
+}
+p{
+  font-size: 15px;
+}
+body{
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+  font-family: "Source Sans Pro", "Hiragino kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+
+#textbox {
+  width: 400px;
+  height: 700px;
+  top: 30px;
+  background: linear-gradient(
+    to bottom,
+  rgba(255, 255, 255, 0.9),
+  rgba(255, 255, 255, 0.0)
+  );
+  position: absolute;
+  right: 230px;
+  padding: 20px;
+}
+
+#textbox h1 {
+  font-size: 50px;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.5em;
+  margin-left: auto;
+  margin-top: 100px;
+}
+
+#main-background {
+  text-align: right;
+}
+
+
+#main-background img {
+ width: 729px;
+ height: 2000px;
+}
+
+
+#image-main img {
+  position: absolute;
+  top: 200px;
+  margin-left: 40px;
+}
+
+#image-city img {
+  position: absolute;
+  top: 1300px;
+  margin-left: 60px;
+}
+
+
+
+.title {
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 0.5em; 
+  margin-top: 100px;
+}
+
+
+.description {
+  margin-left: 200px;
+  letter-spacing: 0.5em;
+  line-height: 5.0em;
+  margin-top: 100px;
+  position: relative;
+}
+
+.description p {
+  font-size: 20px;
+}
+
+#more {
+  text-align: right;
+}
+#more img {
+  width: 500px;
+  margin-top: -300px;
+}
+
+#imagescs img{
+  display: block;
+  margin-left: auto;
+  margin-top: 150px;
+  width: 500px;
+}
+
+#catchphrase1 {
+  margin-top: 100px;
+}
+
+#catchphrase1 h2 {
+  writing-mode: horizontal-tb;
+  font-weight:bold;
+  font-size: 50px;
+  letter-spacing: 0.7em;
+}
+
+#h2 {
+  margin-left: 300px;
+}
+
+#catchphrase1h3 {
+  margin-left: 50px;
+  margin-top: 200px;
+}
+#catchphrase1 h3 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.7em;
+}
+
+#h3 {
+  margin-left: 400px;
+}
+
+#catchphrase1h4 {
+  position: relative;
+  height: 800px;
+  margin-left: 350px;
+  margin-top: 200px;
+  padding-left: 54px;
+}
+
+#catchphrase1h4::before {
+  content: "";
+  height: 700px;
+  width: 700px;
+  margin-left: -500px;
+  bottom: 30px;
+  position: absolute;
+  background-size: contain;
+  background-image: url(images/circle\ M.jpg);
+
+}
+
+#catchphrase1 h4 {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0.7em;
+}
+
+#h4 {
+  margin-left: 200px;
+}
+
+#catchphrase2 {
+text-align: center;
+}
+#catchphrase2  img{
+  margin-top: 70px;
+  width: 800px;
+
+}
+
+#catchphrase2 h1 {
+   writing-mode: horizontal-tb;
+   margin-left: 50px;
+   font-size: 50px;
+   letter-spacing: 0.5em;  
+}
+
+#child-description {
+  margin-top: 400px;
+  width: 50%;
+  text-align: center;
+}
+
+#child-description h2 {
+  font-weight: lighter;
+  letter-spacing: 59%;
+  padding-bottom: 30px;
+}
+
+#child-description p {
+  letter-spacing: 20%;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+}
+
+#content-child img {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-top: -450px;
+  position: relative;
+}
+
+
+#now-description {
+  width: 500px;
+  position: relative;
+  margin-left: 600px;
+  text-align: center; 
+  margin-top: 400px;
+  letter-spacing: 20%;
+  line-height: 40px;
+}
+
+#now-description::before {
+  content: "";
+  position: absolute;
+  left: -200px;
+  width: 300px;
+  height: 600px;
+  z-index: -1;
+  background-image: url(images/background.png);
+}
+
+#content-now img {
+  margin-top: -500px;
+  width: 400px;
+  margin-left: 90px;
+}
+
+.phrase {
+  text-align: center;
+  font-size: 30px;
+  margin: 400px 0;
+}
+
+.phrase h2{
+ font-weight: lighter;
+}
+
+#about-money {
+  padding-top: 150px;
+}
+#ab-description {
+  position: relative;
+  text-align: center;
+  padding-top: 80px;
+  height: 900px;
+  padding-top: 10px;
+  line-height: 150px;
+  letter-spacing: 70%;
+}
+
+#ab-description::before{
+  content: "";
+  height: 900px;
+  width: 900px;
+  bottom: 150px;
+  left: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  background-image: url(images/job.jpg)
+}
+
+#ab-description p {
+  font-size: 22px;
+}
+
+#flex {
+  display: flex;
+}
+
+#flex img{
+ width: 200px;
+ margin-left: 40px;
+}
+
+#text {
+  margin-left: 200px;
+}
+
+#star {
+  text-align: center;
+  margin-top: 70px;
+ 
+}
