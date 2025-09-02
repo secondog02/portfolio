@@ -79,22 +79,47 @@ body{
 }
 
 #more {
-  text-align: right;
+  position: relative; 
 }
 #more img {
   width: 500px;
   margin-top: -300px;
+  margin-left: 560px;
 }
 
-#imagescs img{
+#more .more-btn {
+  position: absolute;
+  width: 120px;
+  height: 40px;
   display: block;
-  margin-left: auto;
-  margin-top: 150px;
-  width: 500px;
+  right: 0;
+  margin-right: 140px;
+  margin-top: -190px;
+  text-indent: -9999px;
+  cursor: pointer;
+  z-index: 10;
 }
 
+#catchphrase {
+  margin-top: 700px;  
+}
+
+.text-indent {
+  text-indent: 18em;
+}
 #catchphrase1 {
-  margin-top: 100px;
+  position: relative;
+}
+
+#catchphrase1::after{
+content: "";
+  height: 500px;
+  width: 500px;
+  right: 0;
+  margin-top: -790px;
+  position: absolute;
+  background-size: contain;
+  background-image: url(images/circle-S.jpg);
 }
 
 #catchphrase1 h2 {
@@ -104,53 +129,44 @@ body{
   letter-spacing: 0.7em;
 }
 
-#h2 {
-  margin-left: 300px;
-}
 
 #catchphrase1h3 {
   margin-left: 50px;
   margin-top: 200px;
 }
-#catchphrase1 h3 {
+
+ h3 {
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 0.7em;
 }
 
-#h3 {
-  margin-left: 400px;
-}
 
 #catchphrase1h4 {
   position: relative;
   height: 800px;
-  margin-left: 350px;
+  padding-left: 310px;
   margin-top: 200px;
-  padding-left: 54px;
 }
 
 #catchphrase1h4::before {
   content: "";
   height: 700px;
   width: 700px;
-  margin-left: -500px;
-  bottom: 30px;
+  left: 0;
+  bottom: -50px;
   position: absolute;
   background-size: contain;
-  background-image: url(images/circle\ M.jpg);
+  background-image: url(images/circle-M.jpg);
 
 }
 
-#catchphrase1 h4 {
+ h4 {
   font-size: 35px;
   font-weight: bold;
   letter-spacing: 0.7em;
 }
 
-#h4 {
-  margin-left: 200px;
-}
 
 #catchphrase2 {
 text-align: center;
@@ -232,6 +248,14 @@ text-align: center;
  font-weight: lighter;
 }
 
+.phrase.we{
+  letter-spacing: 0.1em;
+}
+
+.phrase.now {
+  letter-spacing: 1em;
+}
+
 #about-money {
   padding-top: 150px;
 }
@@ -279,4 +303,95 @@ text-align: center;
   text-align: center;
   margin-top: 70px;
  
+}
+
+/* hobby html */
+.back {
+  margin-top: 50px;
+}
+.back img{
+   width: 50px;
+}
+
+#hobby {
+  text-align: center;
+  position: relative;
+}
+#hobby::before {
+  content: "";
+   width: 400px;
+  height: 700px;
+  top: 30px;
+  background: linear-gradient(
+    to bottom,
+  rgba(255, 255, 255, 0.5),
+  rgba(255, 255, 255, 0.0)
+  );
+  position: absolute;
+  right: 230px;
+  padding: 20px;
+}
+
+#hobby img {
+  width: 600px;
+  height: 800px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 0;
+  margin-top: -70px;
+  position: absolute;
+  z-index: -1;
+}
+
+.hobby-space {
+  margin-bottom: 50px;
+}
+
+#decoration {
+  position: relative;
+}
+
+#decoration h2{
+  background-color: darkgray;
+  width: fit-content;
+}
+
+#decoration::after{
+  content: "";
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 40px;
+  background-image: url(images/background.png);
+  z-index: -1;
+}
+
+.width{
+  width: 300px;
+  height: 200px;
+}
+.width img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.width h2 {
+  text-align: center;
+}
+
+.content.top {
+  justify-content: space-evenly;
+}
+
+.content.bottom{
+  justify-content: space-evenly;
+  margin-bottom: 200px;
 }
